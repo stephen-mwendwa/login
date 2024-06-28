@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Reset Password</title>
+    <link rel="stylesheet" href="steve.css">
+</head>
+<body>
+    <div class="container login-container">
+        <h1>Welcome!</h1>
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="password">
+        <button class="login-btn" onclick="login()">Login</button>
+        <a href="#" onclick="showResetPassword()">Forgot log in details?</a>
+    </div>
+
+    <div class="container reset-container">
+        <h2>Reset Password</h2>
+        <input type="email" placeholder="Enter your email" id="email">
+        <button class="reset-btn" onclick="resetPassword()">Reset Password</button>
+        <a href="#" onclick="showLogin()">Login here</a>
+    </div>
+
+    <script src="steve.js"></script>
+</body>
+</html>

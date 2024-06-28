@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('som.jpeg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.container h1, .container h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #015f61;
+}
+
+.container h1::before, .container h2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black; 
+    border-radius: 20px; 
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black; 
+    border-radius: 20px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.container button.login-btn {
+    background-color: #015f61; 
+    color: white;
+}
+
+.container button.reset-btn {
+    background-color: #FFD700; 
+    color: #015f61;
+}
+
+.container a {
+    display: block;
+    margin-top: 10px;
+    color: #484f56;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.reset-container {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
